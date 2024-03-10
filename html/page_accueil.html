@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="..//js/code.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="../js/jqueries.js"></script>
+        <title>Nos voyages</title>
+    </head>
+
+
+    <body id="bodyprincipal" onload ="create_templates() ; date_hour()">
+
+        <section>
+        <div class="grid_container" id="333" onload="getTemperature()">
+            <template id = "rcorners1">
+                <div class = "grid_item">
+                    <p class = nom_temps >destination {{temperature}}</p>
+                    <a href="reservation.html?id=numero">
+                        <img src="../images/ville.jpg" alt="ville" id="imgeffect">
+                    </a>
+                </div>
+            </template>
+            
+            </div>
+        </section>
+
+        </body>
+<html>
+

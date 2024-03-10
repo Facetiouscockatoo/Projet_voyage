@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "../css/style.css">
+    <script src="..//js/code.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/jqueries.js"></script>
+    <title>Réservation</title>
+</head>
+
+<body id ="body_principal_reservation" onload="destination(); calcul_prix()" >
+    
+    <div id = "body_reservation" >
+        
+        <select name="destination" id="destination_res">
+            <option value="Tokyo">Tokyo</option>
+            <option value="Casablanca">Casablanca</option>
+            <option value="Ile Maurice">Ile Maurice</option>
+            <option value="Munich">Munich</option>
+            <option value="Paris">Paris</option>
+            <option value="Sydney">Sydney</option>
+            <option value="New York">New York</option>
+            <option value="Athènes">Athènes</option>
+        </select>
+        <form action="panier.html" >
+            <fieldset id="fset3">
+                    <p>Information sur le voyage</p>
+                    Nombre d'adultes:<br>
+                    <input type="number" min ="0" name="nbreadultes" value="" id = "nbra"><br>
+                    Nombre d'enfants (-12 ans): <br>
+                    <input type="number" min="0" name="nbreenfants" value="" id="nbre"><br>
+            
+                    Choisir une date de départ : <br>
+                    <input type="date" name="week_year" id="ja" onchange="date_jour()"><br>
+                    Choisir une date de retour : <br>
+                    <input type="date" name="week_year" id="jd" onchange="date_jour()"><br>
+
+
+                    <p id="prix" onload="calcul_prix()">
+                        Prix à payer:
+                    </p>
+
+                    <input type="submit" value="continuer la commande">
+            </fieldset> 
+        </form>
+        
+    
+    </div>
+
+    
+</body>
+</html>

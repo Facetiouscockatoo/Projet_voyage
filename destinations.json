@@ -1,0 +1,16 @@
+
+{
+    "destinations":
+    [
+        { "ville" : "Tokyo", "prix_de_base" : 240, "pDej" : true, "animaux" : false },
+        { "ville" : "Casablanca", "prix_de_base" : 120, "pDej" : true, "animaux" : false },
+        { "ville" : "Ile Maurice", "prix_de_base" : 140, "pDej" : true, "animaux" : false },
+        { "ville" : "Munich", "prix_de_base" : 160, "pDej" : true, "animaux" : false },
+        { "ville" : "Paris", "prix_de_base" : 180, "pDej" : true, "animaux" : true },
+        { "ville" : "Sydney", "prix_de_base" : 200, "pDej" : true, "animaux" : false },
+        { "ville" : "New York", "prix_de_base" : 220, "pDej" : true, "animaux" : true },
+        { "ville" : "Athènes", "prix_de_base" : 240, "pDej" : false, "animaux" : false }
+    
+    ]
+}
+
